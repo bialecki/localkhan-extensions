@@ -1,9 +1,9 @@
 {
     "name": "localkhan", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
-    "author": "", 
+    "author": "Andrew Bialecki", 
     "version": "0.1", 
-    "fullName": "localkhan", 
+    "fullName": "Local Khan Academy", 
     "id": "jid1-c0ak4Mvoa7eJyA", 
-    "description": "a basic add-on"
+    "description": "An add-on to allow you to serve Khan Academy videos from a server other than the YouTube ones."
 }
