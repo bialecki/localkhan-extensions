@@ -2,9 +2,7 @@ $(function () {
   
   var pathName = location.pathname;
 
-  self.port.emit('find-video', {
-    path: pathName
-  });
+  self.port.emit('find-video', { path: pathName });
 
   // Get response and set the video.
   self.on('message', function onMessage(url) {
