@@ -1,0 +1,20 @@
+{
+  "name": "Local Khan Academy",
+  "version": "0.1",
+  "description": "An add-on to allow you to serve Khan Academy videos from a server other than the YouTube ones.",
+  "browser_action": {
+    "default_icon": "data/images/pencil-off.png",
+    "default_title": "Local Khan Academy",
+    "popup": "data/html/settings-panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.khanacademy.org/*"],
+      "js": ["data/js/jquery-1.4.2.min.js", "data/js/swap-videos.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "background_page": "background.html"
+}
