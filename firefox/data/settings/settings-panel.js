@@ -10,7 +10,7 @@ $('form').submit(function (e) {
   
   var isChecked = $('form input[name="active"]').is(':checked'),
       videoUrl = $('form input[name="videoUrl"]').val();
-
+  console.log(isChecked, videoUrl);
   self.port.emit('settings-change', {
     active: isChecked,
     videoUrl: videoUrl

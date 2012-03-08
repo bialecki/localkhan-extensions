@@ -17,7 +17,7 @@ if (!simpleStorage.storage.swapVideosIsOn) {
 
 var setWidgetIcon = function () {
   return simpleStorage.storage.swapVideosIsOn ?
-    data.url('widget/pencil-on.png') : data.url('widget/pencil-off.png');
+    data.url('widget/cancelButton.png') : data.url('widget/checkButton.png');
 }
 
 exports.main = function() {
@@ -68,6 +68,7 @@ exports.main = function() {
     ],
     contentScriptWhen: 'ready',
     onShow: function() {
+      console.log('onShow', simpleStorage.storage.swapVideosIsOn, simpleStorage.storage.videoUrl);
       this.postMessage({
         active: simpleStorage.storage.swapVideosIsOn,
         videoUrl: simpleStorage.storage.videoUrl
